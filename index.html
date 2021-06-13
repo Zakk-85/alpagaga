@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="..........">
+    <title>Projet bootstrap</title>
+
+    <!-- icons -->
+
+    <script src="https://kit.fontawesome.com/0acc5b7a7c.js" crossorigin="anonymous"></script>
+
+    <!-- fonts -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    <!-- css -->
+
+    <link rel="stylesheet" href="./ressources/css/style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <!--MENU-->
+
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">Alpagaga</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#monMenu"
+                        aria-controls="monMenu" aria-label="Menu pour mobile">
+
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="monMenu">
+                    <div class="navbar-nav ms-auto">
+                        <a href="#presentation" class="nav-item nav-link">Qui somme-nous</a>
+                        <a href="#catalogue" class="nav-item nav-link">Vêtements</a>
+                        <a href="#galerie-photos" class="nav-item nav-link">Photos</a>
+                        <a href="#offres" class="nav-item nav-link">Nos offres</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 home-title">
+                    <h1>Boutique <span>Alpagaga</span></h1>
+                    <p>Vêtements du Pérou fabriqués à la main en laine d'alpaga.</p>
+                    <a href="#catalogue" class="btn btn-full">Nos produits</a>
+                    <a href="#contact" class="btn btn-ghost">Contactez-nous</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--PRESENTATION-->
+
+    <section id="presentation">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Présentation</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="./ressources/images/illustration-lamas.png" alt="lamas" class="produits-img" width=""
+                        height="">
+                </div>
+
+                <div class="col-md-5">
+                    <!-- plus produit 1 -->
+                    <div class="produits-plus">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="produits-icons d-flex">
+                                    <img src="./ressources/images/lama.svg" alt="lama" width="60" height="60">
+                                </div>
+                            </div>
+
+                            <div class="col-md-10">
+                                <h3>Made in Peru</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare gravida
+                                    neque. Proin vel felis ut nunc ullamcorper faucibus lacinia non dui. Ut in odio non
+                                    eros
+                                    semper tempor eu quis elit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- plus produit 2 -->
+                        <div class="produits-plus">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <div class="produits-icons d-flex">
+                                        <img src="./ressources/images/lama.svg" alt="lama" width="60" height="60">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-10">
+                                    <h3>Fabrication artisanale</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare
+                                        gravida
+                                        neque. Proin vel felis ut nunc ullamcorper faucibus lacinia non dui. Ut in odio
+                                        non
+                                        eros semper tempor eu quis elit.</p>
+                                </div>
+                            </div>
+                        </div>
+                            <!-- plus produit 3 -->
+                            <div class="produits-plus">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="produits-icons d-flex">
+                                            <img src="./ressources/images/lama.svg" alt="lama" width="60" height="60">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-10">
+                                        <h3>100% Laine d'alpaga</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ornare
+                                            gravida neque. Proin vel felis ut nunc ullamcorper faucibus lacinia non dui.
+                                            Ut
+                                            in odio non eros semper tempor eu quis elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+    </section>
+
+    <!--CATALOGUE-->
+
+    <section id="catalogue">
+        <div class="container">
+            <div class="row">
+                <h2>Nos vêtements</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><div class="details">
+                        <div class="image">
+                            <img src="./ressources/images/bonnets.jpg" alt="bonnet-peruvien" width="300" height="200">
+                        </div>
+                        <h4>Bonnets péruviens</h4>
+                        <p>Duis finibus ex vel vulputate malesuada. Aliquam sem est, eleifend sit amet volutpat non, tristique eu libero.</p>
+                        <div class="motif">
+                            <img src="./ressources/images/motif.jpg" alt="brodure">
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#"><div class="details">
+                        <div class="image">
+                            <img src="./ressources/images/ponchos.jpg" alt="poncho-peruvien" width="300" height="200">
+                        </div>
+                        <h4>Capes et ponchos</h4>
+                        <p>Duis finibus ex vel vulputate malesuada. Aliquam sem est, eleifend sit amet volutpat non, tristique eu libero.</p>
+                        <div class="motif">
+                            <img src="./ressources/images/motif.jpg" alt="brodure">
+                        </div>
+                    </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#"><div class="details">
+                        <div class="image">
+                            <img src="./ressources/images/echarpes.jpg" alt="echarpe-peruvienne" width="300" height="200">
+                        </div>
+                        <h4>Écharpes</h4>
+                        <p>Duis finibus ex vel vulputate malesuada. Aliquam sem est, eleifend sit amet volutpat non, tristique eu libero.</p>
+                        <div class="motif">
+                            <img src="./ressources/images/motif.jpg" alt="brodure">
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--GALERIE PHOTOS-->
+
+    <section id="galerie-photos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Galerie photos</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><div class="galerie-img" style="background-image: url(./ressources/images/galerie/petits-alpagas.jpg);">
+                        <div class="titre-galerie">
+                            <h4>Jeunes alpagas</h4>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-md-8">
+                    <a href="#"><div class="galerie-img" style="background-image: url(./ressources/images/galerie/echoppe.jpg);">
+                        <div class="titre-galerie">
+                            <h4>Échoppes traditionnelles</h4>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">
+                    <a href="#"><div class="galerie-img" style="background-image: url(./ressources/images/galerie/enfant.jpg);">
+                        <div class="titre-galerie">
+                            <h4>Fêtes locales</h4>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-md-3">
+                    <a href="#"><div class="galerie-img" style="background-image: url(./ressources/images/galerie/train.jpg);">
+                        <div class="titre-galerie">
+                            <h4>Grands espaces</h4>
+                        </div>
+                    </div></a>
+                </div>
+
+                <div class="col-md-4">
+                    <a href="#"><div class="galerie-img" style="background-image: url(./ressources/images/galerie/troupeau.jpg);">
+                        <div class="titre-galerie">
+                            <h4>transumances</h4>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--AVIS CLIENTS-->
+
+    <section id="avis-clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Ils sont satisfaits</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="client-profil">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus mi nulla, sit amet cursus turpis laoreet ut. Nulla accumsan eros neque, quis suscipit nisi efficitur semper.
+                            <cite><img src="./ressources/images/portrait-2.jpg" alt="client">Flora</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="client-profil">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus mi nulla, sit amet cursus turpis laoreet ut. Nulla accumsan eros neque, quis suscipit nisi efficitur semper.
+                            <cite><img src="./ressources/images/portrait-1.jpg" alt="client">Ahmed</cite>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="client-profil">
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras finibus mi nulla, sit amet cursus turpis laoreet ut. Nulla accumsan eros neque, quis suscipit nisi efficitur semper.
+                            <cite><img src="./ressources/images/portrait-3.jpg" alt="client">Laurent</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--TABLEAU PACKS-->
+
+    <section id="offres">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Les offres</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pack petit-lama">
+                        <div class="pack-title">
+                            <h3>Petit lama</h3>
+                            <h4>GRATUIT</h4>
+                            <p>pour 80€ d'achats</p>
+                        </div>
+
+                        <div class="pack-content">
+                            <ul>
+                                <li><i class="fas fa-check"></i>frais de port offerts</li>
+                                <li><i class="fas fa-times"></i>1 bonnet offert au choix</li>
+                                <li><i class="fas fa-times"></i>1 écharpes offerte au choix</li>
+                                <li><i class="fas fa-times"></i>1 poncho/cape offert au choix</li>
+                            </ul>
+                        </div>
+
+                        <div class="signup">
+                            <a href="#" class="btn btn-pack">je commandes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pack alpaga">
+                        <div class="pack-title">
+                            <h3>Alpaga</h3>
+                            <h4>5€</h4>
+                            <p>pour 150€ d'achats</p>
+                        </div>
+
+                        <div class="pack-content">
+                            <ul>
+                                <li><i class="fas fa-check"></i>frais de port offerts</li>
+                                <li><i class="fas fa-check"></i>1 bonnet offert au choix</li>
+                                <li><i class="fas fa-check"></i>1 écharpes offerte au choix</li>
+                                <li><i class="fas fa-times"></i>1 poncho/cape offert au choix</li>
+                            </ul>
+                        </div>
+
+                        <div class="signup">
+                            <a href="#" class="btn btn-pack">je souscris</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pack grand-lama">
+                        <div class="pack-title">
+                            <h3>Grand lama</h3>
+                            <h4>5€</h4>
+                            <p>/mois</p>
+                        </div>
+
+                        <div class="pack-content">
+                            <ul>
+                                <li><i class="fas fa-check"></i>frais de port offerts à l'année</li>
+                                <li><i class="fas fa-check"></i>1 bonnet offert au choix</li>
+                                <li><i class="fas fa-check"></i>1 écharpes offerte au choix</li>
+                                <li><i class="fas fa-check"></i>1 poncho/cape offert au choix</li>
+                            </ul>
+                        </div>
+
+                        <div class="signup">
+                            <a href="#" class="btn btn-pack">je souscris</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT-->
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form">
+                                <h2>Contactez-nous</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac odio a eros dapibus faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="telephone">
+                                <p><i class="fas fa-phone-alt"></i> 02.51.36.14.98</p>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="adresse">
+                                <p><i class="fas fa-map-marker-alt"></i> 13, avenue des oliviers 85000 La Roche Sur Yon</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <!-- Nom -->
+                                    <div class="contact-form">
+                                    <label for="">Nom : </label>
+                                    <input type="text" id="name">
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <!-- Mail -->
+                                <div class="contact-form">
+                                    <label for="">Email : </label>
+                                    <input type="email" id="mail" placeholder="Votre email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Select -->
+                                <div class="contact-form">
+                                    <label for="">Sélectionnez le service</label>
+                                    <select name="" id="">
+                                        <option value="">Service client</option>
+                                        <option value="">Service comptable</option>
+                                        <option value="">S.A.V</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Message -->
+                                <div class="contact-form">
+                                    <label for="">Votre message</label>
+                                    <textarea name="" id="message" rows="3" class="contact-message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Bouton -->
+                                <div class="contact-form">
+                                    <button class="btn btn-contact">Envoyer</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-md-6 div-map">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18417.683702937862!2d-1.4366275178059382!3d46.67010966528537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48042f866dcec62b%3A0x40d37521e09b270!2s85000%20La%20Roche-sur-Yon!5e0!3m2!1sfr!2sfr!4v1623498864797!5m2!1sfr!2sfr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT-->
+
+    <footer>
+        <div class="copyright">
+            <p>Site bootstrap @Théo REVEAU - 2021 - ARINFO <a href="#">Mentions légales</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,411 @@
+html{
+    background-color: white;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h1{
+    color: white;
+    letter-spacing: -1px;
+    font-weight: 300;
+    word-spacing: 8px;
+}
+
+h2{
+    color: #333333;
+    font-size: 260%;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h2::after{
+    display: block;
+    height: 2px;
+    background-color: #D45858;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+h3{
+    font-size: 160%;
+}
+
+h4{
+    margin-top: 20px;
+}
+
+p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #575757;;
+    transition: 600ms;
+}
+
+section{
+    padding: 30px 0 60px 0;
+}
+
+/* HEADER
+******************************************* */
+
+header{
+    background-image:linear-gradient(rgba(255, 190, 157, 0.4), rgba(255, 190, 157, 0.6)),
+    url(../images/alpagas.jpg);
+
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title{
+    position: absolute;
+    top: 30%;
+}
+
+.home-title h1{
+    font-size: 340%;
+    color: white;
+}
+
+.home-title h1 span{
+    font-weight: 700;
+    color: #D45858;
+}
+
+.home-title p{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Button
+******************************************* */
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    transition: background-color 600ms, color 600ms, border 600ms;
+    margin-bottom: 20px;
+}
+
+.btn-full{
+    background-color: azure;
+    color: #D45858;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.btn-ghost{
+    border: 1px solid white;
+    color: white;
+    font-weight: 700;
+}
+
+.btn-full:hover{
+    background-color: #D45858;
+    color: white;
+}
+
+.btn-ghost:hover{
+    background-color: #D45858;
+    color: white;
+    border: 1px solid #D45858;
+}
+
+/* PRESENTATION
+******************************************* */
+
+.produits-plus{
+    margin: 20px 0;
+}
+
+#presentation h2::after{
+    background-color: #00A992;
+}
+
+.produits-plus:hover{
+    transform: translateX(20px);
+    color: #575757;
+    transition: transform 600ms, color 600ms;
+}
+
+.produits-img{
+    max-width: 100%;
+    height: auto;
+}
+
+.produits-icons{
+    font-size: 34px;
+}
+
+/* CATALOGUE
+******************************************* */
+
+#catalogue{
+    background-image: linear-gradient(rgba(248,188,77,0.6155637254901961), rgba(248,188,77,0.35057773109243695)),
+    url(../images/texture-alpaga.jpg);
+}
+
+#catalogue .container h2{
+    margin-top: 40px;
+    color: white;
+}
+
+.details{
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.details:hover{
+    transform: scale(1.05, 1.05);
+    transition: 600ms;
+}
+
+.details .image img{
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+    height: auto;
+}
+
+.details h4{
+    text-align: center;
+}
+
+/* GALERIE PHOTOS
+******************************************* */
+
+#galerie-photos h2::after{
+    background-color: #95D2BB;
+}
+
+.galerie-img{
+    height: 300px;
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.titre-galerie{
+    position: relative;
+    top: 245px;
+    left: 20px;
+}
+
+.titre-galerie h2{
+    margin-top: 40px;
+}
+
+.titre-galerie h4{
+    color: white;
+    font-weight: 400;
+}
+
+.galerie-img:hover{
+    transform: scale(1.03, 1.03);
+    transition: 600ms;
+}
+
+/* AVIS CLIENTS
+******************************************* */
+
+#avis-clients{
+    background-image: linear-gradient( rgba(248,188,77,0.3925945378151261), rgba(212,88,88,0.4654236694677871)),
+    url(../images/texture-wool.jpg);
+
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#avis-clients h2::after{
+    background-color: #F8BC4D;
+}
+
+#avis-clients h2, blockquote{
+    color: white;
+}
+
+blockquote{
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+}
+
+blockquote::before{
+    content:"\201C";
+    font-size: 600%;
+    font-family: 'Sanchez', serif;
+    position: relative;
+    top: 55px;
+    left: -10px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* OFFRES
+******************************************* */
+
+#offres h2::after{
+    background-color: #00A992;
+}
+
+.pack{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pack h3{
+    color: #D45858;
+    font-weight: 400;
+}
+
+.pack h4{
+    font-size: 180%;
+    font-weight: 100;
+}
+
+.pack-title{
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.pack-content ul{
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.pack-content ul li i{
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.signup{
+    text-align: center;
+}
+
+.alpaga .signup a:hover, .grand-lama .signup a:hover{
+    background-color:#d82d2d;
+    color: white;
+    transform: scale(1.05, 1.05);
+}
+
+.btn-pack{
+    background-color: #D45858;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.petit-lama .signup a{
+    background-color: white;
+    color: #D45858;
+}
+
+.petit-lama .signup a:hover{
+    transform: scale(1.05, 1.05);
+    color: #d82d2d;
+}
+
+.fa-check{
+    color: rgb(25, 199, 25);
+}
+
+.fa-times{
+    color: red;
+}
+
+/* CONTACT
+******************************************* */
+
+.contact-form{
+    margin-bottom: 30px;
+}
+
+.contact-message{
+    width: 100%;
+}
+
+.btn-contact{
+    background-color: #00A992;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.btn-contact:hover{
+    color: white;
+}
+
+.div-map{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.map{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+/* FOOTER
+******************************************* */
+
+footer{
+    background-color: #2c2c2c;
+    color: white;
+    height: 60px;
+    text-align: center;
+    padding: 20px;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copyright a{
+    color: white;
+    padding-left: 10px;
+}
